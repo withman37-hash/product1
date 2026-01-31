@@ -7,9 +7,8 @@ This project is a web application that includes a lottery number generator with 
 ## Features
 
 - A user interface for the lottery number generator (`index.html`).
-- A button to generate **10 unique random numbers** between 1 and 45.
+- A button to generate **6 unique random numbers** between 1 and 45.
 - The generated numbers are displayed on the screen.
-- **Improved layout for 10 lottery numbers (allowing wrapping).**
 - Dark mode/Light mode toggle functionality with local storage preference.
 - A dedicated "제휴 문의" page (`contact.html`) with a simple contact form using Formspree.
 - Navigation link to the "제휴 문의" page in the header of `index.html`.
@@ -29,6 +28,5 @@ This project is a web application that includes a lottery number generator with 
 
 ## Last Request
 
-- Modify the lottery number generator to extract 10 numbers.
-- Adjust layout for 10 numbers.
+- Modify the lottery number generator to extract 6 numbers (revert from 10).
 - Upload the code to GitHub.
