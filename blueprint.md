@@ -13,12 +13,13 @@ This project is a web application that includes a lottery number generator with 
 - A dedicated "제휴 문의" page (`contact.html`) with a simple contact form using Formspree.
 - Navigation link to the "제휴 문의" page in the header of `index.html`.
 - A dedicated "동물상 테스트" page (`pet_face_test.html`) using a Teachable Machine model.
-  *   **Allows image file upload for classification.**
+  *   Allows image file upload for classification.
   *   Displays the uploaded image and the classification result.
+  *   **Fixed Teachable Machine script loading issues (consolidated to @latest versions).**
 - Navigation link to the "동물상 테스트" page in the header of `index.html`.
 - The code is hosted on GitHub: https://github.com/withman37-hash/product1
 
 ## Last Request
 
-- Change the "동물상 테스트" page from webcam-based classification to file input-based classification.
+- Fix the issue where "분류하기" button on "동물상 테스트" page does not show result.
 - Upload the code to GitHub.
