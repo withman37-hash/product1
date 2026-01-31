@@ -205,41 +205,26 @@ button {
   margin-bottom: 20px;
 }
 
-.pet-face-test-section input[type="file"] {
+#webcam-container {
   margin-bottom: 20px;
-  padding: 10px;
   border: 1px solid var(--lotto-number-border);
   border-radius: 4px;
-  background-color: var(--background-color);
-  color: var(--text-color);
-}
-
-.image-preview-container {
-  width: 100%;
-  max-width: 400px;
-  height: 300px;
-  border: 1px dashed var(--lotto-number-border);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 20px;
   overflow: hidden;
-  background-color: var(--background-color);
 }
 
-#image-preview {
-  max-width: 100%;
-  max-height: 100%;
-  display: none; /* Hidden until image is loaded */
+#webcam-container canvas {
+  display: block;
 }
 
-.pet-face-test-section button {
-  margin-bottom: 20px;
-}
-
-.result-display {
+#label-container {
+  margin-top: 20px;
   font-size: 20px;
   font-weight: bold;
   color: var(--text-color);
-  min-height: 24px; /* To prevent layout shift */
+  text-align: center;
+  min-height: 48px; /* Enough space for two lines of prediction */
+}
+
+#label-container div {
+  margin-bottom: 5px;
 }
