@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project is a web application that includes a lottery number generator with a theme switching feature, and a contact form powered by Formspree. It consists of multiple HTML files (for contact form), a main HTML file, a CSS file, and a JavaScript file.
+This project is a web application that includes a lottery number generator with a theme switching feature, a contact form powered by Formspree, and a "Dog/Cat Face Test" page using a Teachable Machine model. It consists of multiple HTML files (for contact form and test page), a main HTML file, a CSS file, and a JavaScript file.
 
 ## Features
 
@@ -12,9 +12,13 @@ This project is a web application that includes a lottery number generator with 
 - Dark mode/Light mode toggle functionality with local storage preference.
 - A dedicated "제휴 문의" page (`contact.html`) with a simple contact form using Formspree.
 - Navigation link to the "제휴 문의" page in the header of `index.html`.
+- **A dedicated "강아지상/고양이상 테스트" page (`pet_face_test.html`) using a Teachable Machine model.**
+  *   Allows image upload for classification.
+  *   Displays the uploaded image and the classification result.
+- Navigation link to the "강아지상/고양이상 테스트" page in the header of `index.html`.
 - The code is hosted on GitHub: https://github.com/withman37-hash/product1
 
 ## Last Request
 
-- Remove the comment section.
+- Add a "Dog/Cat Face Test" page using a Teachable Machine model.
 - Upload the code to GitHub.

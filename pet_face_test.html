@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ko" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>강아지상/고양이상 테스트</title>
+  <link href='/style.css' rel='stylesheet'>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+</head>
+<body>
+  <div class="header">
+    <h1>강아지상/고양이상 테스트</h1>
+    <nav>
+      <a href="/" class="nav-link">홈</a>
+      <a href="/contact.html" class="nav-link">제휴 문의</a>
+      <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+    </nav>
+  </div>
+
+  <section class="pet-face-test-section">
+    <h2>이미지를 업로드하여 테스트</h2>
+    <input type="file" id="image-upload" accept="image/*">
+    <div class="image-preview-container">
+      <img id="image-preview" src="#" alt="이미지 미리보기">
+    </div>
+    <button id="classify-btn" disabled>분류하기</button>
+    <div id="result" class="result-display"></div>
+  </section>
+
+  <script type="text/javascript">
+    const URL = "https://teachablemachine.withgoogle.com/models/oNOqLfbwz/";
+    let model, webcam, labelContainer, maxPredictions;
+
+    async function init() {
+      const modelURL = URL + "model.json";
+      const metadataURL = URL + "metadata.json";
+
+      // load the model and metadata
+      // Refer to tmImage.loadFromFiles() in the API to load your own custom models
+      // from a file or for those hosted on GCP's Vertex AI
+      model = await tmImage.load(modelURL, metadataURL);
+      maxPredictions = model.getTotalClasses();
+
+      // Setup event listeners and initial state
+      const imageUpload = document.getElementById('image-upload');
+      const imagePreview = document.getElementById('image-preview');
+      const classifyBtn = document.getElementById('classify-btn');
+      const resultDiv = document.getElementById('result');
+
+      imageUpload.addEventListener('change', (event) => {
+        if (event.target.files && event.target.files[0]) {
+          const reader = new FileReader();
+          reader.onload = (e) => {
+            imagePreview.src = e.target.result;
+            imagePreview.style.display = 'block';
+            classifyBtn.disabled = false;
+            resultDiv.textContent = ''; // Clear previous results
+          };
+          reader.readAsDataURL(event.target.files[0]);
+        }
+      });
+
+      classifyBtn.addEventListener('click', classifyImage);
+    }
+
+    async function classifyImage() {
+      const imagePreview = document.getElementById('image-preview');
+      const resultDiv = document.getElementById('result');
+      if (imagePreview.src && imagePreview.src !== '#') {
+        classifyBtn.disabled = true; // Disable button during classification
+        resultDiv.textContent = '분석 중...';
+        const prediction = await model.predict(imagePreview);
+        let highestPrediction = { className: '알 수 없음', probability: 0 };
+
+        for (let i = 0; i < maxPredictions; i++) {
+          const classPrediction =
+            prediction[i].className + ": " + prediction[i].probability.toFixed(2);
+          if (prediction[i].probability > highestPrediction.probability) {
+            highestPrediction = prediction[i];
+          }
+        }
+        
+        resultDiv.textContent = `결과: ${highestPrediction.className} (${(highestPrediction.probability * 100).toFixed(2)}%)`;
+        classifyBtn.disabled = false; // Re-enable button
+      }
+    }
+
+    window.onload = init; // Initialize the model when the window loads
+  </script>
+  <script defer type="text/javascript" src="/main.js"></script>
+</body>
+</html>
