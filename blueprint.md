@@ -12,14 +12,13 @@ This project is a web application that includes a lottery number generator with 
 - Dark mode/Light mode toggle functionality with local storage preference.
 - A dedicated "제휴 문의" page (`contact.html`) with a simple contact form using Formspree.
 - Navigation link to the "제휴 문의" page in the header of `index.html`.
-- **A dedicated "동물상 테스트" page (`pet_face_test.html`) using a Teachable Machine model.**
-  *   **Uses webcam for real-time image classification.**
-  *   Displays the webcam feed and the real-time classification result.
+- A dedicated "동물상 테스트" page (`pet_face_test.html`) using a Teachable Machine model.
+  *   **Allows image file upload for classification.**
+  *   Displays the uploaded image and the classification result.
 - Navigation link to the "동물상 테스트" page in the header of `index.html`.
 - The code is hosted on GitHub: https://github.com/withman37-hash/product1
 
 ## Last Request
 
-- Rename "강아지상/고양이상 테스트" to "동물상 테스트".
-- Confirm Teachable Machine webcam integration with the provided model.
+- Change the "동물상 테스트" page from webcam-based classification to file input-based classification.
 - Upload the code to GitHub.
