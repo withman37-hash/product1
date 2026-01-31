@@ -164,3 +164,23 @@ button {
 .contact-form button[type="submit"]:hover {
   background-color: var(--button-hover-bg);
 }
+
+.comments-section {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: var(--lotto-number-bg);
+  border: 1px solid var(--lotto-number-border);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%; /* Ensure it takes up enough width */
+  max-width: 800px; /* Max width to prevent it from being too wide on large screens */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.comments-section h2 {
+  color: var(--text-color);
+  margin-bottom: 20px;
+}
