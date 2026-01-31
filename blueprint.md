@@ -16,6 +16,5 @@ This project is a web application that includes a lottery number generator with 
 
 ## Last Request
 
-- Refactor the partnership inquiry form to a separate page (`contact.html`).
-- Add a navigation link to the contact page in the top right of the main page.
+- Revert the comment functionality to its initial state (before it was added).
 - Upload the code to GitHub.
