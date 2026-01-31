@@ -33,7 +33,7 @@ themeToggleBtn.addEventListener('click', () => {
 generateBtn.addEventListener('click', () => {
   lottoNumbersContainer.innerHTML = '';
   const numbers = new Set();
-  while (numbers.size < 6) {
+  while (numbers.size < 10) {
     const randomNumber = Math.floor(Math.random() * 45) + 1;
     numbers.add(randomNumber);
   }

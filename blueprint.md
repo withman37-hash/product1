@@ -7,8 +7,9 @@ This project is a web application that includes a lottery number generator with 
 ## Features
 
 - A user interface for the lottery number generator (`index.html`).
-- A button to generate 6 unique random numbers between 1 and 45.
+- A button to generate **10 unique random numbers** between 1 and 45.
 - The generated numbers are displayed on the screen.
+- **Improved layout for 10 lottery numbers (allowing wrapping).**
 - Dark mode/Light mode toggle functionality with local storage preference.
 - A dedicated "제휴 문의" page (`contact.html`) with a simple contact form using Formspree.
 - Navigation link to the "제휴 문의" page in the header of `index.html`.
@@ -20,7 +21,7 @@ This project is a web application that includes a lottery number generator with 
 - Google AdSense integration:
   *   AdSense script and meta tag added to `index.html`, `contact.html`, and `pet_face_test.html`.
   *   `ads.txt` file created in the project root.
-- **Enhanced SEO and site credibility:**
+- Enhanced SEO and site credibility:
   *   `meta description` and `meta keywords` added to `index.html`, `contact.html`, and `pet_face_test.html`.
   *   Placeholder "회사 소개" (`about.html`) and "개인정보처리방침" (`privacy.html`) pages created.
   *   Navigation links to "회사 소개" and "개인정보처리방침" added to the header of `index.html`.
@@ -28,6 +29,6 @@ This project is a web application that includes a lottery number generator with 
 
 ## Last Request
 
-- Optimize the site for Google AdSense approval based on provided blog post references.
-- Implement suggested improvements: meta tags, "About Us" and "Privacy Policy" pages with navigation.
+- Modify the lottery number generator to extract 10 numbers.
+- Adjust layout for 10 numbers.
 - Upload the code to GitHub.

@@ -68,7 +68,11 @@ h1 {
 
 .lotto-numbers {
   display: flex;
+  flex-wrap: wrap; /* Allow numbers to wrap to the next line */
   gap: 10px;
+  justify-content: center; /* Center numbers when wrapped */
+  max-width: 600px; /* Give it more space */
+  margin: 0 auto; /* Center the container */
 }
 
 .lotto-number {
