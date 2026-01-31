@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project is a web application that includes a lottery number generator with a theme switching feature, a contact form powered by Formspree, and a "동물상 테스트" page using a Teachable Machine model. It consists of multiple HTML files (for contact form and test page), a main HTML file, a CSS file, and a JavaScript file.
+This project is a web application that includes a lottery number generator with a theme switching feature, a contact form powered by Formspree, a "동물상 테스트" page using a Teachable Machine model, and integrated Google AdSense. It consists of multiple HTML files (for contact form and test page), a main HTML file, a CSS file, and a JavaScript file, along with an `ads.txt` file.
 
 ## Features
 
@@ -15,11 +15,14 @@ This project is a web application that includes a lottery number generator with 
 - A dedicated "동물상 테스트" page (`pet_face_test.html`) using a Teachable Machine model.
   *   Allows image file upload for classification.
   *   Displays the uploaded image and the classification result.
-  *   **Fixed Teachable Machine script loading issues (consolidated to @latest versions).**
+  *   Fixed Teachable Machine script loading issues (consolidated to @latest versions).
 - Navigation link to the "동물상 테스트" page in the header of `index.html`.
+- **Google AdSense integration:**
+  *   AdSense script and meta tag added to `index.html`, `contact.html`, and `pet_face_test.html`.
+  *   `ads.txt` file created in the project root.
 - The code is hosted on GitHub: https://github.com/withman37-hash/product1
 
 ## Last Request
 
-- Fix the issue where "분류하기" button on "동물상 테스트" page does not show result.
+- Add Google AdSense to the site based on provided information.
 - Upload the code to GitHub.
