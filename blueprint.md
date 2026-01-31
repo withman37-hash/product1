@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project is a web application that includes a lottery number generator with a theme switching feature, a separate page for a contact form powered by Formspree, and a dedicated comments page using Disqus. It consists of multiple HTML files, a CSS file, and a JavaScript file.
+This project is a web application that includes a lottery number generator with a theme switching feature, a contact form powered by Formspree, and an integrated comments section using Disqus. It consists of multiple HTML files (for contact form) and a main HTML file, a CSS file, and a JavaScript file.
 
 ## Features
 
@@ -12,13 +12,13 @@ This project is a web application that includes a lottery number generator with 
 - Dark mode/Light mode toggle functionality with local storage preference.
 - A dedicated "제휴 문의" page (`contact.html`) with a simple contact form using Formspree.
 - Navigation link to the "제휴 문의" page in the header of `index.html`.
-- **A dedicated "댓글" page (`comments.html`) with Disqus comment functionality.**
-  *   **Note:** The Disqus shortname has been updated to `'roger'` in `comments.html`.
+- **Integrated "댓글" section (`index.html`) with Disqus comment functionality.**
+  *   **Note:** The Disqus shortname has been updated to `'roger'` and is now embedded directly in `index.html`.
 - **Improved layout for the comments section, making it wider and better displayed.**
-- Navigation link to the "댓글" page in the header of `index.html`.
 - The code is hosted on GitHub: https://github.com/withman37-hash/product1
 
 ## Last Request
 
-- Update the Disqus shortname to `'roger'`.
+- Move the comment section back to `index.html`.
+- Remove the separate `comments.html` page.
 - Upload the code to GitHub.
