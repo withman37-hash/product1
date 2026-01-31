@@ -13,12 +13,11 @@ This project is a web application that includes a lottery number generator with 
 - A dedicated "제휴 문의" page (`contact.html`) with a simple contact form using Formspree.
 - Navigation link to the "제휴 문의" page in the header of `index.html`.
 - **Integrated "댓글" section (`index.html`) with Disqus comment functionality.**
-  *   **Note:** The Disqus shortname has been updated to `'roger'` and is now embedded directly in `index.html`.
+  *   **Note:** The Disqus shortname has been updated to `'jews-1'` and is now embedded directly in `index.html`.
 - **Improved layout for the comments section, making it wider and better displayed.**
 - The code is hosted on GitHub: https://github.com/withman37-hash/product1
 
 ## Last Request
 
-- Move the comment section back to `index.html`.
-- Remove the separate `comments.html` page.
+- Update the Disqus shortname to `'jews-1'`.
 - Upload the code to GitHub.
