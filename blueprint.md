@@ -19,5 +19,5 @@ This project is a web application that includes a lottery number generator with 
 
 ## Last Request
 
-- Update the Disqus shortname to `'jews-1'`.
+- Add debugging `console.log` to `disqus_config` function to verify execution.
 - Upload the code to GitHub.
